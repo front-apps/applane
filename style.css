@@ -1,0 +1,505 @@
+/*................................reset...........................................*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*................................clearfix...........................................*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/*.........GLOBLE......*/
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('fonts/helveticaneue-thin.woff2') format('woff2'),
+         url('fonts/helveticaneue-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: Helvetica, Arial, Gotham, sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: #646464;
+	font-weight: 400;
+	background: #fff;
+}
+h2 {
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;;
+	font-size: 52px;
+	line-height: 43px;
+	text-align: left;
+	letter-spacing:-0.5px;
+	text-transform: uppercase;
+}
+
+header {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	z-index: 9998;
+	width: 100%;
+	padding: 45px 0;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+header.sticky {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
+	padding: 15px 0px;
+}
+header a.logo img {
+	display: block;
+}
+.logo {
+	width: 30%;
+	float: left;
+}
+nav {
+	width: 70%;
+	float: left;
+	text-align: right;
+	padding-top:15px;
+}
+nav ul li {
+	display: inline-block;
+	padding:0 0 0 25px;
+}
+nav ul li a {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing:-.25px;
+	display: block;
+	padding:0 5px;
+	border-bottom:4px solid rgba(0,0,0,0);
+	color: #fff;
+	text-transform:uppercase;
+}
+nav ul li a:hover {
+	border-bottom:4px solid #fff;
+	transition: all 0.5s;
+}
+#banner {
+	background: url(images/banner.jpg) no-repeat bottom center;
+	background-size: cover;
+	padding: 205px 0 0px;
+}
+#banner img {
+	display: block;
+	float:right;
+}
+#banner h2 {
+	color: #fff;
+	text-align: left;
+	margin-top: 40px;
+	line-height:56px;
+}
+#banner h3{
+	font-size:36px;
+	line-height:42px;
+	letter-spacing:0.2px;
+	font-weight:100;
+	margin:40px 0;
+	color:#fff;
+	font-family: 'helvetica_neueregular';
+}
+
+#banner a{
+	width: 363px;
+	height: 70px;
+	line-height: 70px;
+	background:#282828;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;;
+	font-size: 18px;
+	border-radius:50px;
+	display: block;
+	text-transform:uppercase;
+	letter-spacing:-0.25px;
+}
+#banner a:hover {
+	background: #fff;
+	color: #232323;
+	transition: all 0.5s;
+}
+#banner a i{position:relative; top: 12px;
+    margin-right: 10px;
+    line-height: 10px;}
+#fetures{
+	padding:85px 0; text-align:center;	
+}
+#fetures h2{text-align:center; color:#8a8a8a;}
+#fetures h3{    font-size: 22px;
+    color: #3a3a3a;
+    padding: 40px 0 50px;
+    line-height: 32px;}
+#fetures h4{font-size:24px; margin:35px 0; color:#1a1a1a; text-transform:uppercase;font-weight: 700;
+	font-family: 'Nunito', sans-serif;;}
+#fetures p{font-weight:300;}
+#download{
+	background:url(images/download.jpg) no-repeat;
+	padding:180px 0;
+	background-size:cover;	
+}
+#download h2{
+	color:#fff;
+	line-height:56px;	
+}
+#download h2 span{
+	color:#f55150;	
+}
+#download p{
+	font-size:24px;
+	line-height:36px;
+	font-weight:300;
+	margin:40px 0 50px;
+	color:#f2f2f2;
+	font-family: 'helvetica_neueregular';
+}
+#download a{
+	width: 138px;
+	height: 49px;
+	line-height: 49px;
+	background:#d9332d;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;;
+	font-size: 16px;
+	border-radius:50px;
+	display: block;
+	letter-spacing:-0.25px;
+	margin-left:20px;
+}
+#download a:hover {
+	background: #000;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+#testimonial{
+	text-align:center;
+	padding:85px 0 60px;	
+}
+#testimonial p{
+	font-size:34px;
+	line-height:46px;
+	font-weight:100;
+	color:#787878;
+	font-family: 'helvetica_neueregular';
+}
+#testimonial span{
+	color: #d9332d;
+	text-transform:uppercase;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;;
+	font-size: 20px;
+	line-height:26px;
+	display:block;
+	padding:43px 0 50px;
+}
+footer{
+		padding:120px 0;
+		background:#2e2e38;
+		
+}
+footer a img{display:block; margin-bottom:50px;}
+footer h3{
+	color: #fff;
+	margin-bottom:25px;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;;
+	font-size: 20px;
+}
+footer h4 a{
+	font-family: 'Nunito', sans-serif;;
+	color:#fff;
+	font-size:15px;
+	padding-right:30%;
+	padding-left:10px;
+	padding-bottom:20px;
+	display:block;	
+}
+p.last{margin-top:30px;}
+footer article h5 a{
+	font-family: 'Nunito', sans-serif;;
+	font-size: 14px;
+	line-height:14px;
+	font-weight: 700;
+	color:#fff;
+	margin-top:7px;
+	display:block;	
+}
+footer article span{font-size:11px; color:#fff;}
+footer article p{
+	font-family: 'Nunito', sans-serif;;
+	font-size: 15px;
+	color:#fff;
+	padding:20px 0;
+}
+footer article a{
+	font-family: 'Nunito', sans-serif;;
+	font-size: 15px;
+	color:#fff;
+}
+p.diff{
+	color:#fff;
+	font-style:italic;	
+}
+footer p{color:#fff;}
+p.last a{color:#fff;}
+p.last a:hover{color:#e74c3c;}
+
+/* New */
+
+.os-animation {
+	opacity: 0;
+}
+.os-animation.animated {
+	opacity: 1;
+}
+.staggered-animation {
+	opacity: 0;
+}
+.staggered-animation.animated {
+	opacity: 1;
+}
+/*LOADER EFFECT*/
+/*Paste this css to your style sheet file or under head tag*/
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: #f74c55;
+}
+
+
+
+.cssload-loader {
+	height: 39px;
+	width: 40px;
+	position: absolute;
+	top:50%;
+	left:calc(50% - 19px);
+	animation: cssload-loader 3.75s cubic-bezier(.8,0,.2,1) infinite;
+		-o-animation: cssload-loader 3.75s cubic-bezier(.8,0,.2,1) infinite;
+		-ms-animation: cssload-loader 3.75s cubic-bezier(.8,0,.2,1) infinite;
+		-webkit-animation: cssload-loader 3.75s cubic-bezier(.8,0,.2,1) infinite;
+		-moz-animation: cssload-loader 3.75s cubic-bezier(.8,0,.2,1) infinite;
+}
+
+.cssload-top {
+	animation: cssload-top 3.75s linear infinite;
+		-o-animation: cssload-top 3.75s linear infinite;
+		-ms-animation: cssload-top 3.75s linear infinite;
+		-webkit-animation: cssload-top 3.75s linear infinite;
+		-moz-animation: cssload-top 3.75s linear infinite;
+	border-top: 19px solid rgb(0,0,0);
+	border-right: 19px solid transparent;
+	border-left: 19px solid transparent;
+	height: 0px;
+	width: 1px;
+	transform-origin: 50% 100%;
+		-o-transform-origin: 50% 100%;
+		-ms-transform-origin: 50% 100%;
+		-webkit-transform-origin: 50% 100%;
+		-moz-transform-origin: 50% 100%;
+}
+
+.cssload-bottom {
+	animation: cssload-bottom 3.75s linear infinite;
+		-o-animation: cssload-bottom 3.75s linear infinite;
+		-ms-animation: cssload-bottom 3.75s linear infinite;
+		-webkit-animation: cssload-bottom 3.75s linear infinite;
+		-moz-animation: cssload-bottom 3.75s linear infinite;
+	border-right: 19px solid transparent;
+	border-bottom: 19px solid rgb(0,0,0);
+	border-left: 19px solid transparent;
+	height: 0px;
+	width: 1px;
+	transform: scale(0);
+		-o-transform: scale(0);
+		-ms-transform: scale(0);
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+	transform-origin: 50% 100%;
+		-o-transform-origin: 50% 100%;
+		-ms-transform-origin: 50% 100%;
+		-webkit-transform-origin: 50% 100%;
+		-moz-transform-origin: 50% 100%;
+}
+
+.cssload-line {
+	animation: cssload-line 3.75s linear infinite;
+		-o-animation: cssload-line 3.75s linear infinite;
+		-ms-animation: cssload-line 3.75s linear infinite;
+		-webkit-animation: cssload-line 3.75s linear infinite;
+		-moz-animation: cssload-line 3.75s linear infinite;
+	border-left: 1px dotted rgb(0,0,0);
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: 19px;
+	left: 19px;
+}
+
+
+@keyframes cssload-loader {
+	90% { transform: rotate(0deg); }
+	100% { transform: rotate(180deg); }
+}
+
+@-o-keyframes cssload-loader {
+	90% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(180deg); }
+}
+
+@-ms-keyframes cssload-loader {
+	90% { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(180deg); }
+}
+
+@-webkit-keyframes cssload-loader {
+	90% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(180deg); }
+}
+
+@-moz-keyframes cssload-loader {
+	90% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(180deg); }
+}
+
+@keyframes cssload-top {
+	90% { transform: scale(0); }
+	100% { transform: scale(0);}
+}
+
+@-o-keyframes cssload-top {
+	90% { -o-transform: scale(0); }
+	100% { -o-transform: scale(0);}
+}
+
+@-ms-keyframes cssload-top {
+	90% { -ms-transform: scale(0); }
+	100% { -ms-transform: scale(0);}
+}
+
+@-webkit-keyframes cssload-top {
+	90% { -webkit-transform: scale(0); }
+	100% { -webkit-transform: scale(0);}
+}
+
+@-moz-keyframes cssload-top {
+	90% { -moz-transform: scale(0); }
+	100% { -moz-transform: scale(0);}
+}
+
+@keyframes cssload-bottom {
+	10% { transform: scale(0); }
+	90% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+
+@-o-keyframes cssload-bottom {
+	10% { -o-transform: scale(0); }
+	90% { -o-transform: scale(1); }
+	100% { -o-transform: scale(1); }
+}
+
+@-ms-keyframes cssload-bottom {
+	10% { -ms-transform: scale(0); }
+	90% { -ms-transform: scale(1); }
+	100% { -ms-transform: scale(1); }
+}
+
+@-webkit-keyframes cssload-bottom {
+	10% { -webkit-transform: scale(0); }
+	90% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@-moz-keyframes cssload-bottom {
+	10% { -moz-transform: scale(0); }
+	90% { -moz-transform: scale(1); }
+	100% { -moz-transform: scale(1); }
+}
+
+@keyframes cssload-line {
+	10% { height: 19px; }
+	100% { height: 19px; }
+}
+
+@-o-keyframes cssload-line {
+	10% { height: 19px; }
+	100% { height: 19px; }
+}
+
+@-ms-keyframes cssload-line {
+	10% { height: 19px; }
+	100% { height: 19px; }
+}
+
+@-webkit-keyframes cssload-line {
+	10% { height: 19px; }
+	100% { height: 19px; }
+}
+
+@-moz-keyframes cssload-line {
+	10% { height: 19px; }
+	100% { height: 19px; }
+}
